@@ -6,12 +6,17 @@ import click
 
 
 @click.command()
-def main(args=None):
-    """Console script for led_tester."""
-    click.echo("Replace this message by putting your code into "
-               "led_tester.cli.main")
-    click.echo("See click documentation at http://click.pocoo.org/")
-    return 0
+def main(input=None):
+	""" Console script for led_tester."""
+	print("input", input)
+
+	N, instructions = parseFile(input)
+	ledTester = LEDTester(N)
+	for instruction in instructions:
+		ledTester.apply(instruction)
+
+	print('#occupied: ', ledTester.countOccupied())
+	return 0
 
 
 if __name__ == "__main__":
