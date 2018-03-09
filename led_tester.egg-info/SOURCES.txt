@@ -9,6 +9,7 @@ requirements_dev.txt
 setup.cfg
 setup.py
 tox.ini
+data/.DS_Store
 data/input_assign3.txt
 data/test_data.txt
 docs/.gitignore
@@ -34,4 +35,8 @@ led_tester.egg-info/not-zip-safe
 led_tester.egg-info/requires.txt
 led_tester.egg-info/top_level.txt
 tests/.DS_Store
-tests/test_readfile.py
+tests/test_apply.py
+tests/test_init.py
+tests/test_readfile_local.py
+tests/test_readfile_network.py
+tests/test_relex.py
