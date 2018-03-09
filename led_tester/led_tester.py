@@ -15,3 +15,7 @@ def parseFile(input):
 		buffer = open(input).read()
 	return buffer
 
+def relex(cmd):
+	pattern = re.compile(".*(turn on|turn off|switch)\s*([+-]?\d+)\s*,\s*([+-]?\d+)\s*through\s*([+-]?\d+)\s*,\s*([+-]?\d+).*")
+	m = re.findall(pattern, str(cmd))
+	return m
