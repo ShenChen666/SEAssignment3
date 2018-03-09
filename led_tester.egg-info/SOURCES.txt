@@ -9,6 +9,8 @@ requirements_dev.txt
 setup.cfg
 setup.py
 tox.ini
+data/input_assign3.txt
+data/test_data.txt
 docs/.gitignore
 docs/Makefile
 docs/authors.rst
@@ -23,6 +25,7 @@ docs/usage.rst
 led_tester/__init__.py
 led_tester/cli.py
 led_tester/led_tester.py
+led_tester/utils.py
 led_tester.egg-info/PKG-INFO
 led_tester.egg-info/SOURCES.txt
 led_tester.egg-info/dependency_links.txt
@@ -30,4 +33,5 @@ led_tester.egg-info/entry_points.txt
 led_tester.egg-info/not-zip-safe
 led_tester.egg-info/requires.txt
 led_tester.egg-info/top_level.txt
-tests/test_led_tester.py
+tests/.DS_Store
+tests/test_readfile.py
