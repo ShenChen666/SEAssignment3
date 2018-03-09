@@ -19,3 +19,10 @@ def relex(cmd):
 	pattern = re.compile(".*(turn on|turn off|switch)\s*([+-]?\d+)\s*,\s*([+-]?\d+)\s*through\s*([+-]?\d+)\s*,\s*([+-]?\d+).*")
 	m = re.findall(pattern, str(cmd))
 	return m
+
+class LightTester:
+	def __init__(self,N):
+		N = int(N)
+		self.N = N
+		self.lights = [ [0]*N for _ in range(N) ]
+		
